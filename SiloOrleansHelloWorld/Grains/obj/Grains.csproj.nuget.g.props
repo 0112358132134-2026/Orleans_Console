@@ -12,4 +12,7 @@
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <SourceRoot Include="C:\Users\68541\.nuget\packages\" />
   </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)microsoft.orleans.codegenerator\7.1.0\buildTransitive\Microsoft.Orleans.CodeGenerator.props" Condition="Exists('$(NuGetPackageRoot)microsoft.orleans.codegenerator\7.1.0\buildTransitive\Microsoft.Orleans.CodeGenerator.props')" />
+  </ImportGroup>
 </Project>
